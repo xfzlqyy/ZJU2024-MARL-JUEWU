@@ -43,7 +43,7 @@ def hill_climbing(n_episodes=10000, gamma=0.99, noise_scale=1e-2):
         timesteps = 0 ## is the same as len(rewards)
         
         while True:
-            if i_episode % 100 == 0:
+            if i_episode % 2000 == 0:
                 time.sleep(0.01)
                 env.render()
                 pass
