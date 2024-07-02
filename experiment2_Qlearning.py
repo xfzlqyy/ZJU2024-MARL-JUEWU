@@ -53,6 +53,8 @@ class SARSA:
         total_reward = 0
         step = 0
         while True:
+            time.sleep(0.01)
+            env.render(mode='human')
             action = np.argmax(self.Q[state, :])
             state, reward, done, _ = self.env.step(action)
             total_reward += reward
